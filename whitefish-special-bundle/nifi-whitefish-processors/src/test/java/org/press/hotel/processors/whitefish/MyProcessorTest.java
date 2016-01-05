@@ -61,7 +61,7 @@ public class MyProcessorTest {
 				.newTestRunner(new MyProcessor());
 
 		URL url = Thread.currentThread().getContextClassLoader()
-				.getResource("bozeman.html");
+				.getResource("couer.html");
 		Path resPath = Paths.get(url.toURI());
 		final String SAMPLE_STRING = new String(Files.readAllBytes(resPath),
 				"UTF8");
